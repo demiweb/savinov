@@ -7,18 +7,12 @@
     <title>Главная страница - Savinov - Архитектурная студия. Коммерческие и жилые проекты.</title>
 
 
-
     <link rel="stylesheet" href="./src/css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora&amp;subset=cyrillic" rel="stylesheet">
     <link href="./src/css/vjs.css" rel="stylesheet">
     <link href="./src/css/n2sli.css" rel="stylesheet">
-
-
-
-
-
 
 
     <link rel="stylesheet" type="text/css"
@@ -47,24 +41,7 @@
     <script src="./src/js/shabl.js"></script>
     <script src="./src/js/particles.min.js"></script>
 
-    <script>(function () {
-        var N = this;
-        N.N2_ = N.N2_ || {r: [], d: []}, N.N2R = N.N2R || function () {
-            N.N2_.r.push(arguments)
-        }, N.N2D = N.N2D || function () {
-            N.N2_.d.push(arguments)
-        }
-    }).call(window);
-    window.nextend = {
-        jQueryFallback: './src/js/jq/jquery.js',
-        localization: {},
-        ready: function (cb) {
-            console.error('nextend.ready will be deprecated!');
-            N2R('documentReady', function ($) {
-                cb.call(window, $)
-            })
-        }
-    };</script>
+    <script src="./src/js/n2init.js"></script>
     <script src="./src/js/smartslider3/n2.min.js?ver=821e0c40"></script>
     <script src="./src/js/smartslider3/smartslider-frontend.min.js?ver=821e0c40"></script>
     <script src="./src/js/smartslider3/smartslider-simple-type-frontend.min.js?ver=821e0c40"></script>
@@ -156,7 +133,6 @@
 
                 </div>
             </div>
-
 
 
             <div class="sliders">
@@ -396,258 +372,7 @@
                                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjgwMCIgPjwvc3ZnPg=="
                                  alt="Slider"></div>
 
-                        <script>
-                            N2R(["documentReady", "smartslider-frontend", "smartslider-simple-type-frontend"], function () {
-                            new N2Classes.SmartSliderSimple('#n2-ss-2', {
-                                "admin": false,
-                                "callbacks": "",
-                                "background.video.mobile": 1,
-                                "alias": {"id": 0, "smoothScroll": 0, "slideSwitch": 0, "scroll": 1},
-                                "align": "normal",
-                                "isDelayed": 0,
-                                "load": {"fade": 1, "scroll": 0},
-                                "playWhenVisible": 1,
-                                "playWhenVisibleAt": 0.5,
-                                "responsive": {
-                                    "hideOn": {
-                                        "desktopLandscape": false,
-                                        "desktopPortrait": false,
-                                        "tabletLandscape": false,
-                                        "tabletPortrait": false,
-                                        "mobileLandscape": false,
-                                        "mobilePortrait": false
-                                    },
-                                    "onResizeEnabled": true,
-                                    "type": "fullwidth",
-                                    "downscale": 1,
-                                    "upscale": 1,
-                                    "minimumHeight": 700,
-                                    "maximumSlideWidth": {
-                                        "desktopLandscape": 10000,
-                                        "desktopPortrait": 10000,
-                                        "tabletLandscape": 10000,
-                                        "tabletPortrait": 10000,
-                                        "mobileLandscape": 10000,
-                                        "mobilePortrait": 10000
-                                    },
-                                    "forceFull": 0,
-                                    "forceFullOverflowX": "html",
-                                    "forceFullHorizontalSelector": "body",
-                                    "constrainRatio": 1,
-                                    "sliderHeightBasedOn": "real",
-                                    "decreaseSliderHeight": 0,
-                                    "focusUser": 1,
-                                    "focusEdge": "auto",
-                                    "breakpoints": [{
-                                        "device": "tabletPortrait",
-                                        "type": "max-screen-width",
-                                        "portraitWidth": 1199,
-                                        "landscapeWidth": 1199
-                                    }, {
-                                        "device": "mobilePortrait",
-                                        "type": "max-screen-width",
-                                        "portraitWidth": 700,
-                                        "landscapeWidth": 900
-                                    }],
-                                    "enabledDevices": {
-                                        "desktopLandscape": 0,
-                                        "desktopPortrait": 1,
-                                        "tabletLandscape": 0,
-                                        "tabletPortrait": 1,
-                                        "mobileLandscape": 0,
-                                        "mobilePortrait": 1
-                                    },
-                                    "sizes": {
-                                        "desktopPortrait": {
-                                            "width": 1920,
-                                            "height": 800,
-                                            "max": 3000,
-                                            "min": 1200
-                                        },
-                                        "tabletPortrait": {"width": 701, "height": 292, "max": 1199, "min": 701},
-                                        "mobilePortrait": {"width": 320, "height": 133, "max": 900, "min": 320}
-                                    },
-                                    "normalizedDeviceModes": {
-                                        "unknown": "desktopPortrait",
-                                        "desktopPortrait": "desktopPortrait",
-                                        "desktopLandscape": "desktopPortrait",
-                                        "tabletLandscape": "desktopPortrait",
-                                        "tabletPortrait": "tabletPortrait",
-                                        "mobileLandscape": "tabletPortrait",
-                                        "mobilePortrait": "mobilePortrait"
-                                    },
-                                    "overflowHiddenPage": 0,
-                                    "focus": {"offsetTop": "#wpadminbar", "offsetBottom": ""}
-                                },
-                                "controls": {
-                                    "mousewheel": 0,
-                                    "touch": "horizontal",
-                                    "keyboard": 1,
-                                    "blockCarouselInteraction": 1
-                                },
-                                "lazyLoad": 0,
-                                "lazyLoadNeighbor": 0,
-                                "blockrightclick": 0,
-                                "maintainSession": 0,
-                                "autoplay": {
-                                    "enabled": 1,
-                                    "start": 1,
-                                    "duration": 5000,
-                                    "autoplayLoop": 1,
-                                    "allowReStart": 0,
-                                    "pause": {"click": 1, "mouse": "0", "mediaStarted": 1},
-                                    "resume": {"click": 0, "mouse": "0", "mediaEnded": 1, "slidechanged": 0},
-                                    "interval": 1,
-                                    "intervalModifier": "loop",
-                                    "intervalSlide": "current"
-                                },
-                                "perspective": 1500,
-                                "layerMode": {
-                                    "playOnce": 0,
-                                    "playFirstLayer": 1,
-                                    "mode": "skippable",
-                                    "inAnimation": "mainInEnd"
-                                },
-                                "bgAnimationsColor": "RGBA(51,51,51,1)",
-                                "bgAnimations": 0,
-                                "mainanimation": {
-                                    "type": "fade",
-                                    "duration": 1200,
-                                    "delay": 0,
-                                    "ease": "easeOutQuad",
-                                    "parallax": 0,
-                                    "shiftedBackgroundAnimation": 0
-                                },
-                                "carousel": 1,
-                                "dynamicHeight": 0,
-                                "initCallbacks": function ($) {
-                                    N2D("SmartSliderWidgetArrowImage", "SmartSliderWidget", function (e, i) {
-                                        function r(e, i, t, s, r, o) {
-                                            this.key = e, this.action = t, this.desktopRatio = s, this.tabletRatio = r, this.mobileRatio = o, N2Classes.SmartSliderWidget.prototype.constructor.call(this, i)
-                                        }
 
-                                        return ((r.prototype = Object.create(N2Classes.SmartSliderWidget.prototype)).constructor = r).prototype.onStart = function () {
-                                            this.deferred = e.Deferred(), this.slider.sliderElement.on("SliderDevice", this.onDevice.bind(this)).trigger("addWidget", this.deferred), this.$widget = e("#" + this.slider.elementID + "-arrow-" + this.key).on("click", function (e) {
-                                                e.stopPropagation(), this.slider[this.action]()
-                                            }.bind(this)), this.$resize = this.$widget.find(".n2-resize"), 0 === this.$resize.length && (this.$resize = this.$widget), e.when(this.$widget.n2imagesLoaded(), this.slider.stages.get("ResizeFirst").getDeferred()).always(this.onLoad.bind(this))
-                                        }, r.prototype.onLoad = function () {
-                                            this.$widget.addClass("n2-ss-widget--calc"), this.previousWidth = this.$resize.width(), this.previousHeight = this.$resize.height(), this.$widget.removeClass("n2-ss-widget--calc"), this.$resize.find("img").css("width", "100%"), this.onDevice(null, {device: this.slider.responsive.getDeviceMode()}), this.deferred.resolve()
-                                        }, r.prototype.onDevice = function (e, i) {
-                                            var t = 1;
-                                            switch (i.device) {
-                                                case"tabletPortrait":
-                                                case"tabletLandscape":
-                                                    t = this.tabletRatio;
-                                                    break;
-                                                case"mobilePortrait":
-                                                case"mobileLandscape":
-                                                    t = this.mobileRatio;
-                                                    break;
-                                                default:
-                                                    t = this.desktopRatio
-                                            }
-                                            this.$resize.width(this.previousWidth * t + "px"), this.$resize.height(this.previousHeight * t + "px")
-                                        }, function (e, i, t, s) {
-                                            this.key = "arrow", this.previous = new r("previous", e, "previousWithDirection", i, t, s), this.next = new r("next", e, "nextWithDirection", i, t, s)
-                                        }
-                                    });
-                                    new N2Classes.SmartSliderWidgetArrowImage(this, 1, 1, 0.5);
-                                    N2D("SmartSliderWidgetBulletTransition", "SmartSliderWidget", function (l, s) {
-                                        function t(t, e) {
-                                            this.key = "bullet", this.parameters = e, N2Classes.SmartSliderWidget.prototype.constructor.call(this, t)
-                                        }
-
-                                        return ((t.prototype = Object.create(N2Classes.SmartSliderWidget.prototype)).constructor = t).prototype.onStart = function () {
-                                            switch (this.hasDots = !0, this.axis = "horizontal", this.offset = 0, this.$bar = this.slider.sliderElement.find(".nextend-bullet-bar"), this.$widget = this.$bar.parent(), this.event = "universalclick", "mouseenter" === this.parameters.action && (this.event = "universalenter"), this.parameters.area) {
-                                                case 5:
-                                                case 8:
-                                                    this.axis = "vertical"
-                                            }
-                                            this.slider.stages.done("BeforeShow", this.onBeforeShow.bind(this))
-                                        }, t.prototype.onBeforeShow = function () {
-                                            this.onVisibleSlidesChanged(), this.hasDots && this.slider.currentSlide.$dot.addClass("n2-active").removeAttr("tabindex").attr("aria-current", "true"), this.slider.sliderElement.on({
-                                                visibleSlidesChanged: this.onVisibleSlidesChanged.bind(this),
-                                                SlideWillChange: this.onSlideSwitch.bind(this)
-                                            })
-                                        }, t.prototype.onSlideSwitch = function (t, e) {
-                                            this.hasDots && (this.$dots.removeClass("n2-active").attr("tabindex", "0").removeAttr("aria-current"), e.$dot.addClass("n2-active").removeAttr("tabindex").attr("aria-current", "true"))
-                                        }, t.prototype.showThumbnail = function (t, e) {
-                                            var i = this.getThumbnail(t);
-                                            NextendTween.to(i, .3, {opacity: 1}), t.$dot.one("universalleave.thumbnailleave", this.hideThumbnail.bind(this, i))
-                                        }, t.prototype.hideThumbnail = function (t, e) {
-                                            e.stopPropagation(), NextendTween.to(t, .3, {
-                                                opacity: 0,
-                                                onComplete: function () {
-                                                    t.remove()
-                                                }
-                                            })
-                                        }, t.prototype.getThumbnail = function (t) {
-                                            var e = t.$dot, i = this.slider.sliderElement.offset(), s = e.offset(),
-                                                o = e.outerWidth(), a = e.outerHeight(),
-                                                r = l("<div></div>").append(l("<div></div>").css({
-                                                    width: this.parameters.thumbnailWidth + "px",
-                                                    height: this.parameters.thumbnailHeight + "px",
-                                                    backgroundImage: 'url("' + t.getThumbnail() + '")'
-                                                }).addClass("n2-ss-bullet-thumbnail")).addClass(this.parameters.thumbnailStyle).addClass("n2-ss-bullet-thumbnail-container").appendTo(this.slider.sliderElement);
-                                            switch (this.parameters.thumbnailPosition) {
-                                                case"right":
-                                                    r.css({
-                                                        left: s.left - i.left + o + "px",
-                                                        top: s.top - i.top + a / 2 - r.outerHeight(!0) / 2 + "px"
-                                                    });
-                                                    break;
-                                                case"left":
-                                                    r.css({
-                                                        left: s.left - i.left - r.outerWidth(!0) + "px",
-                                                        top: s.top - i.top + a / 2 - r.outerHeight(!0) / 2 + "px"
-                                                    });
-                                                    break;
-                                                case"top":
-                                                    r.css({
-                                                        left: s.left - i.left + o / 2 - r.outerWidth(!0) / 2 + "px",
-                                                        top: s.top - i.top - r.outerHeight(!0) + "px"
-                                                    });
-                                                    break;
-                                                case"bottom":
-                                                    r.css({
-                                                        left: s.left - i.left + o / 2 - r.outerWidth(!0) / 2 + "px",
-                                                        top: s.top - i.top + a + "px"
-                                                    })
-                                            }
-                                            return e.data("thumbnail", r), r
-                                        }, t.prototype.onVisibleSlidesChanged = function () {
-                                            if (this.$dotsOuter !== s && (this.$dotsOuter.remove(), delete this.$dotsOuter), this.$bar.html(""), this.slider.visibleSlides.length <= 1) this.hasDots = !1; else {
-                                                this.hasDots = !0, this.$dots = l(), this.$dotsOuter = l();
-                                                for (var t = 0; t < this.slider.visibleSlides.length; t++) {
-                                                    var e = this.slider.visibleSlides[t],
-                                                        i = l('<div class="n2-ow n2-bullet ' + this.parameters.dotClasses + '" tabindex="0"></div>').attr("role", "button").attr("aria-label", e.getTitle()).appendTo(this.$bar);
-                                                    switch (this.$dotsOuter = this.$dotsOuter.add(i.wrap(l('<div class="n2-ow"></div>').on(this.event, this.onDotClick.bind(this, e))).on("n2Activate", this.onDotClick.bind(this, e))), e.$dot = i, this.$dots = this.$dots.add(i), this.parameters.mode) {
-                                                        case"numeric":
-                                                            i.html(t + 1);
-                                                            break;
-                                                        case"title":
-                                                            i.html(e.getTitle())
-                                                    }
-                                                    if (1 === this.parameters.thumbnail) e.getThumbnail() && i.on({universalenter: this.showThumbnail.bind(this, e)}, {leaveOnSecond: !0})
-                                                }
-                                                this.onSlideSwitch(null, this.slider.currentSlide)
-                                            }
-                                        }, t.prototype.onDotClick = function (t, e) {
-                                            this.slider.directionalChangeTo(t.index)
-                                        }, t.prototype.calculateDimensions = function (t) {
-                                            this.isVisible() ? (this.$widget.addClass("n2-ss-control-bullet--calculate-size"), t[this.key + "width"] = this.$bar.outerWidth(), t[this.key + "height"] = this.$bar.outerHeight(), this.$widget.removeClass("n2-ss-control-bullet--calculate-size")) : (t[this.key + "width"] = 0, t[this.key + "height"] = 0)
-                                        }, t
-                                    });
-                                    new N2Classes.SmartSliderWidgetBulletTransition(this, {
-                                        "area": 10,
-                                        "dotClasses": "n2-style-13586a9834f840c6e3b0e8ac4aa4b69c-dot ",
-                                        "mode": "",
-                                        "action": "click"
-                                    });
-                                }
-                            });
-                        });
-                        </script>
                     </div>
 
 
@@ -818,7 +543,6 @@
             </div>
 
 
-
             <div class="parthnersblock">
                 <h2 class="clients activateblock">Наши клиенты:</h2>
                 <div class="padding-items-clients">
@@ -867,8 +591,6 @@
             </div>
 
 
-
-
         </div>
     </div>
 </div>
@@ -889,7 +611,258 @@
 
 <div class="overlaysavinov" onclick="closepopup()" style="display: none;"></div>
 
+<script>
+    N2R(["documentReady", "smartslider-frontend", "smartslider-simple-type-frontend"], function () {
+        new N2Classes.SmartSliderSimple('#n2-ss-2', {
+            "admin": false,
+            "callbacks": "",
+            "background.video.mobile": 1,
+            "alias": {"id": 0, "smoothScroll": 0, "slideSwitch": 0, "scroll": 1},
+            "align": "normal",
+            "isDelayed": 0,
+            "load": {"fade": 1, "scroll": 0},
+            "playWhenVisible": 1,
+            "playWhenVisibleAt": 0.5,
+            "responsive": {
+                "hideOn": {
+                    "desktopLandscape": false,
+                    "desktopPortrait": false,
+                    "tabletLandscape": false,
+                    "tabletPortrait": false,
+                    "mobileLandscape": false,
+                    "mobilePortrait": false
+                },
+                "onResizeEnabled": true,
+                "type": "fullwidth",
+                "downscale": 1,
+                "upscale": 1,
+                "minimumHeight": 700,
+                "maximumSlideWidth": {
+                    "desktopLandscape": 10000,
+                    "desktopPortrait": 10000,
+                    "tabletLandscape": 10000,
+                    "tabletPortrait": 10000,
+                    "mobileLandscape": 10000,
+                    "mobilePortrait": 10000
+                },
+                "forceFull": 0,
+                "forceFullOverflowX": "html",
+                "forceFullHorizontalSelector": "body",
+                "constrainRatio": 1,
+                "sliderHeightBasedOn": "real",
+                "decreaseSliderHeight": 0,
+                "focusUser": 1,
+                "focusEdge": "auto",
+                "breakpoints": [{
+                    "device": "tabletPortrait",
+                    "type": "max-screen-width",
+                    "portraitWidth": 1199,
+                    "landscapeWidth": 1199
+                }, {
+                    "device": "mobilePortrait",
+                    "type": "max-screen-width",
+                    "portraitWidth": 700,
+                    "landscapeWidth": 900
+                }],
+                "enabledDevices": {
+                    "desktopLandscape": 0,
+                    "desktopPortrait": 1,
+                    "tabletLandscape": 0,
+                    "tabletPortrait": 1,
+                    "mobileLandscape": 0,
+                    "mobilePortrait": 1
+                },
+                "sizes": {
+                    "desktopPortrait": {
+                        "width": 1920,
+                        "height": 800,
+                        "max": 3000,
+                        "min": 1200
+                    },
+                    "tabletPortrait": {"width": 701, "height": 292, "max": 1199, "min": 701},
+                    "mobilePortrait": {"width": 320, "height": 133, "max": 900, "min": 320}
+                },
+                "normalizedDeviceModes": {
+                    "unknown": "desktopPortrait",
+                    "desktopPortrait": "desktopPortrait",
+                    "desktopLandscape": "desktopPortrait",
+                    "tabletLandscape": "desktopPortrait",
+                    "tabletPortrait": "tabletPortrait",
+                    "mobileLandscape": "tabletPortrait",
+                    "mobilePortrait": "mobilePortrait"
+                },
+                "overflowHiddenPage": 0,
+                "focus": {"offsetTop": "#wpadminbar", "offsetBottom": ""}
+            },
+            "controls": {
+                "mousewheel": 0,
+                "touch": "horizontal",
+                "keyboard": 1,
+                "blockCarouselInteraction": 1
+            },
+            "lazyLoad": 0,
+            "lazyLoadNeighbor": 0,
+            "blockrightclick": 0,
+            "maintainSession": 0,
+            "autoplay": {
+                "enabled": 1,
+                "start": 1,
+                "duration": 5000,
+                "autoplayLoop": 1,
+                "allowReStart": 0,
+                "pause": {"click": 1, "mouse": "0", "mediaStarted": 1},
+                "resume": {"click": 0, "mouse": "0", "mediaEnded": 1, "slidechanged": 0},
+                "interval": 1,
+                "intervalModifier": "loop",
+                "intervalSlide": "current"
+            },
+            "perspective": 1500,
+            "layerMode": {
+                "playOnce": 0,
+                "playFirstLayer": 1,
+                "mode": "skippable",
+                "inAnimation": "mainInEnd"
+            },
+            "bgAnimationsColor": "RGBA(51,51,51,1)",
+            "bgAnimations": 0,
+            "mainanimation": {
+                "type": "fade",
+                "duration": 1200,
+                "delay": 0,
+                "ease": "easeOutQuad",
+                "parallax": 0,
+                "shiftedBackgroundAnimation": 0
+            },
+            "carousel": 1,
+            "dynamicHeight": 0,
+            "initCallbacks": function ($) {
+                N2D("SmartSliderWidgetArrowImage", "SmartSliderWidget", function (e, i) {
+                    function r(e, i, t, s, r, o) {
+                        this.key = e, this.action = t, this.desktopRatio = s, this.tabletRatio = r, this.mobileRatio = o, N2Classes.SmartSliderWidget.prototype.constructor.call(this, i)
+                    }
 
+                    return ((r.prototype = Object.create(N2Classes.SmartSliderWidget.prototype)).constructor = r).prototype.onStart = function () {
+                        this.deferred = e.Deferred(), this.slider.sliderElement.on("SliderDevice", this.onDevice.bind(this)).trigger("addWidget", this.deferred), this.$widget = e("#" + this.slider.elementID + "-arrow-" + this.key).on("click", function (e) {
+                            e.stopPropagation(), this.slider[this.action]()
+                        }.bind(this)), this.$resize = this.$widget.find(".n2-resize"), 0 === this.$resize.length && (this.$resize = this.$widget), e.when(this.$widget.n2imagesLoaded(), this.slider.stages.get("ResizeFirst").getDeferred()).always(this.onLoad.bind(this))
+                    }, r.prototype.onLoad = function () {
+                        this.$widget.addClass("n2-ss-widget--calc"), this.previousWidth = this.$resize.width(), this.previousHeight = this.$resize.height(), this.$widget.removeClass("n2-ss-widget--calc"), this.$resize.find("img").css("width", "100%"), this.onDevice(null, {device: this.slider.responsive.getDeviceMode()}), this.deferred.resolve()
+                    }, r.prototype.onDevice = function (e, i) {
+                        var t = 1;
+                        switch (i.device) {
+                            case"tabletPortrait":
+                            case"tabletLandscape":
+                                t = this.tabletRatio;
+                                break;
+                            case"mobilePortrait":
+                            case"mobileLandscape":
+                                t = this.mobileRatio;
+                                break;
+                            default:
+                                t = this.desktopRatio
+                        }
+                        this.$resize.width(this.previousWidth * t + "px"), this.$resize.height(this.previousHeight * t + "px")
+                    }, function (e, i, t, s) {
+                        this.key = "arrow", this.previous = new r("previous", e, "previousWithDirection", i, t, s), this.next = new r("next", e, "nextWithDirection", i, t, s)
+                    }
+                });
+                new N2Classes.SmartSliderWidgetArrowImage(this, 1, 1, 0.5);
+                N2D("SmartSliderWidgetBulletTransition", "SmartSliderWidget", function (l, s) {
+                    function t(t, e) {
+                        this.key = "bullet", this.parameters = e, N2Classes.SmartSliderWidget.prototype.constructor.call(this, t)
+                    }
+
+                    return ((t.prototype = Object.create(N2Classes.SmartSliderWidget.prototype)).constructor = t).prototype.onStart = function () {
+                        switch (this.hasDots = !0, this.axis = "horizontal", this.offset = 0, this.$bar = this.slider.sliderElement.find(".nextend-bullet-bar"), this.$widget = this.$bar.parent(), this.event = "universalclick", "mouseenter" === this.parameters.action && (this.event = "universalenter"), this.parameters.area) {
+                            case 5:
+                            case 8:
+                                this.axis = "vertical"
+                        }
+                        this.slider.stages.done("BeforeShow", this.onBeforeShow.bind(this))
+                    }, t.prototype.onBeforeShow = function () {
+                        this.onVisibleSlidesChanged(), this.hasDots && this.slider.currentSlide.$dot.addClass("n2-active").removeAttr("tabindex").attr("aria-current", "true"), this.slider.sliderElement.on({
+                            visibleSlidesChanged: this.onVisibleSlidesChanged.bind(this),
+                            SlideWillChange: this.onSlideSwitch.bind(this)
+                        })
+                    }, t.prototype.onSlideSwitch = function (t, e) {
+                        this.hasDots && (this.$dots.removeClass("n2-active").attr("tabindex", "0").removeAttr("aria-current"), e.$dot.addClass("n2-active").removeAttr("tabindex").attr("aria-current", "true"))
+                    }, t.prototype.showThumbnail = function (t, e) {
+                        var i = this.getThumbnail(t);
+                        NextendTween.to(i, .3, {opacity: 1}), t.$dot.one("universalleave.thumbnailleave", this.hideThumbnail.bind(this, i))
+                    }, t.prototype.hideThumbnail = function (t, e) {
+                        e.stopPropagation(), NextendTween.to(t, .3, {
+                            opacity: 0,
+                            onComplete: function () {
+                                t.remove()
+                            }
+                        })
+                    }, t.prototype.getThumbnail = function (t) {
+                        var e = t.$dot, i = this.slider.sliderElement.offset(), s = e.offset(),
+                            o = e.outerWidth(), a = e.outerHeight(),
+                            r = l("<div></div>").append(l("<div></div>").css({
+                                width: this.parameters.thumbnailWidth + "px",
+                                height: this.parameters.thumbnailHeight + "px",
+                                backgroundImage: 'url("' + t.getThumbnail() + '")'
+                            }).addClass("n2-ss-bullet-thumbnail")).addClass(this.parameters.thumbnailStyle).addClass("n2-ss-bullet-thumbnail-container").appendTo(this.slider.sliderElement);
+                        switch (this.parameters.thumbnailPosition) {
+                            case"right":
+                                r.css({
+                                    left: s.left - i.left + o + "px",
+                                    top: s.top - i.top + a / 2 - r.outerHeight(!0) / 2 + "px"
+                                });
+                                break;
+                            case"left":
+                                r.css({
+                                    left: s.left - i.left - r.outerWidth(!0) + "px",
+                                    top: s.top - i.top + a / 2 - r.outerHeight(!0) / 2 + "px"
+                                });
+                                break;
+                            case"top":
+                                r.css({
+                                    left: s.left - i.left + o / 2 - r.outerWidth(!0) / 2 + "px",
+                                    top: s.top - i.top - r.outerHeight(!0) + "px"
+                                });
+                                break;
+                            case"bottom":
+                                r.css({
+                                    left: s.left - i.left + o / 2 - r.outerWidth(!0) / 2 + "px",
+                                    top: s.top - i.top + a + "px"
+                                })
+                        }
+                        return e.data("thumbnail", r), r
+                    }, t.prototype.onVisibleSlidesChanged = function () {
+                        if (this.$dotsOuter !== s && (this.$dotsOuter.remove(), delete this.$dotsOuter), this.$bar.html(""), this.slider.visibleSlides.length <= 1) this.hasDots = !1; else {
+                            this.hasDots = !0, this.$dots = l(), this.$dotsOuter = l();
+                            for (var t = 0; t < this.slider.visibleSlides.length; t++) {
+                                var e = this.slider.visibleSlides[t],
+                                    i = l('<div class="n2-ow n2-bullet ' + this.parameters.dotClasses + '" tabindex="0"></div>').attr("role", "button").attr("aria-label", e.getTitle()).appendTo(this.$bar);
+                                switch (this.$dotsOuter = this.$dotsOuter.add(i.wrap(l('<div class="n2-ow"></div>').on(this.event, this.onDotClick.bind(this, e))).on("n2Activate", this.onDotClick.bind(this, e))), e.$dot = i, this.$dots = this.$dots.add(i), this.parameters.mode) {
+                                    case"numeric":
+                                        i.html(t + 1);
+                                        break;
+                                    case"title":
+                                        i.html(e.getTitle())
+                                }
+                                if (1 === this.parameters.thumbnail) e.getThumbnail() && i.on({universalenter: this.showThumbnail.bind(this, e)}, {leaveOnSecond: !0})
+                            }
+                            this.onSlideSwitch(null, this.slider.currentSlide)
+                        }
+                    }, t.prototype.onDotClick = function (t, e) {
+                        this.slider.directionalChangeTo(t.index)
+                    }, t.prototype.calculateDimensions = function (t) {
+                        this.isVisible() ? (this.$widget.addClass("n2-ss-control-bullet--calculate-size"), t[this.key + "width"] = this.$bar.outerWidth(), t[this.key + "height"] = this.$bar.outerHeight(), this.$widget.removeClass("n2-ss-control-bullet--calculate-size")) : (t[this.key + "width"] = 0, t[this.key + "height"] = 0)
+                    }, t
+                });
+                new N2Classes.SmartSliderWidgetBulletTransition(this, {
+                    "area": 10,
+                    "dotClasses": "n2-style-13586a9834f840c6e3b0e8ac4aa4b69c-dot ",
+                    "mode": "",
+                    "action": "click"
+                });
+            }
+        });
+    });
+</script>
 <script>
     function openpopup() {
         $('.popupbocksavinov').fadeIn();
@@ -900,7 +873,6 @@
         $('.popupbocksavinov').fadeOut();
         $('.overlaysavinov').fadeOut();
     }
-
 
 
     function openlang() {

@@ -7,17 +7,11 @@
     <title>Главная страница - Savinov - Архитектурная студия. Коммерческие и жилые проекты.</title>
 
 
-
     <link rel="stylesheet" href="./src/css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora&amp;subset=cyrillic" rel="stylesheet">
     <link href="./src/css/vjs.css" rel="stylesheet">
-
-
-
-
-
 
 
     <link rel="stylesheet" type="text/css"
@@ -46,24 +40,7 @@
     <script src="./src/js/shabl.js"></script>
     <script src="./src/js/particles.min.js"></script>
 
-    <script>(function () {
-        var N = this;
-        N.N2_ = N.N2_ || {r: [], d: []}, N.N2R = N.N2R || function () {
-            N.N2_.r.push(arguments)
-        }, N.N2D = N.N2D || function () {
-            N.N2_.d.push(arguments)
-        }
-    }).call(window);
-    window.nextend = {
-        jQueryFallback: './src/js/jq/jquery.js',
-        localization: {},
-        ready: function (cb) {
-            console.error('nextend.ready will be deprecated!');
-            N2R('documentReady', function ($) {
-                cb.call(window, $)
-            })
-        }
-    };</script>
+    <script src="./src/js/n2init.js"></script>
     <script src="./src/js/smartslider3/n2.min.js?ver=821e0c40"></script>
     <script src="./src/js/smartslider3/smartslider-frontend.min.js?ver=821e0c40"></script>
     <script src="./src/js/smartslider3/smartslider-simple-type-frontend.min.js?ver=821e0c40"></script>
@@ -73,14 +50,9 @@
 </head>
 
 
-
-
-
-
 <body>
 
 <div class="preloader">
-
 
 
 </div>
@@ -118,7 +90,6 @@
                 </a>
 
 
-
                 <a class="global-menu__item global-menu__item--demo-2" href="/projects/">
                     <div class="decorationtext">
                         <div class="maintext">Проекты</div>
@@ -136,8 +107,6 @@
                 </a>
 
 
-
-
             </div>
         </div>
         <div class="svgpath-mobile"></div>
@@ -148,7 +117,6 @@
 
 
         <div class="triggerblock"></div>
-
 
 
         <div class="blackmenu">
@@ -171,8 +139,10 @@
             </div>
 
             <div class="socphone">
-                <div class="itemsocial instasoc" onclick="location.href='https://www.instagram.com/savinov.architects/'"></div>
-                <div class="itemsocial fbsocial" onclick="location.href='https://www.facebook.com/Savinov.Architects/'"></div>
+                <div class="itemsocial instasoc"
+                     onclick="location.href='https://www.instagram.com/savinov.architects/'"></div>
+                <div class="itemsocial fbsocial"
+                     onclick="location.href='https://www.facebook.com/Savinov.Architects/'"></div>
                 <div class="itemsocial phonesocial" onclick="location.href='tel:380675190550'"></div>
             </div>
 
@@ -181,16 +151,28 @@
         <div class="whtmenu">
             <div class="whitehtm">
                 <div class="righthtm">
-                    <a href="/ru/home/"><div class="itemright">Главная</div></a>
-                    <a href="/ru/about/"><div class="itemright">О нас</div></a>
-                    <a href="/projects/"><div class="itemright">Проекты</div></a>
-                    <a href="/contacts/"><div class="itemright">Контакты</div></a>
+                    <a href="/ru/home/">
+                        <div class="itemright">Главная</div>
+                    </a>
+                    <a href="/ru/about/">
+                        <div class="itemright">О нас</div>
+                    </a>
+                    <a href="/projects/">
+                        <div class="itemright">Проекты</div>
+                    </a>
+                    <a href="/contacts/">
+                        <div class="itemright">Контакты</div>
+                    </a>
                 </div>
                 <div class="lefthtm">
                     <div class="itemright" onclick="openlang()">РУС</div>
                     <div class="newlangauge" id="tglcls" style="display: none;">
-                        <a href="/home-ua/"><div class="itemnewlang">УКР</div></a>
-                        <a href="/home-eng/"><div class="itemnewlang">ENG</div></a>
+                        <a href="/home-ua/">
+                            <div class="itemnewlang">УКР</div>
+                        </a>
+                        <a href="/home-eng/">
+                            <div class="itemnewlang">ENG</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -199,7 +181,9 @@
         <div class="mainclass">
 
             <div class="head-imageblock">
-                <a href="/"><div class="logoss-black-top"></div></a>
+                <a href="/">
+                    <div class="logoss-black-top"></div>
+                </a>
                 <div class="main-title-block">
                     <h1 class="nameproject">Elf Decor Odessa</h1>
                     <div class="category-name">Коммерческие проекты</div>
@@ -210,7 +194,6 @@
             <div style="height: 20px;"></div>
 
 
-
             <div class="projectblock nopadding">
 
 
@@ -218,63 +201,150 @@
                     #gallery-1 {
                         margin: auto;
                     }
+
                     #gallery-1 .gallery-item {
                         float: left;
                         margin-top: 10px;
                         text-align: center;
                         width: 100%;
                     }
+
                     #gallery-1 img {
                         border: 2px solid #cfcfcf;
                     }
+
                     #gallery-1 .gallery-caption {
                         margin-left: 0;
                     }
 
                 </style>
-                <div id='gallery-1' class='gallery galleryid-1101 gallery-columns-1 gallery-size-large'><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View01-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View01-1024x768.jpg 1024w, ./src/img/1111_View01-300x225.jpg 300w, ./src/img/1111_View01-768x576.jpg 768w, ./src/img/1111_View01-1536x1152.jpg 1536w, ./src/img/1111_View01.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View03-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View03-1024x768.jpg 1024w, ./src/img/1111_View03-300x225.jpg 300w, ./src/img/1111_View03-768x576.jpg 768w, ./src/img/1111_View03-1536x1152.jpg 1536w, ./src/img/1111_View03.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View04-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View04-1024x768.jpg 1024w, ./src/img/1111_View04-300x225.jpg 300w, ./src/img/1111_View04-768x576.jpg 768w, ./src/img/1111_View04-1536x1152.jpg 1536w, ./src/img/1111_View04.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View020-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View020-1024x768.jpg 1024w, ./src/img/1111_View020-300x225.jpg 300w, ./src/img/1111_View020-768x576.jpg 768w, ./src/img/1111_View020-1536x1152.jpg 1536w, ./src/img/1111_View020.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View05-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View05-1024x768.jpg 1024w, ./src/img/1111_View05-300x225.jpg 300w, ./src/img/1111_View05-768x576.jpg 768w, ./src/img/1111_View05-1536x1152.jpg 1536w, ./src/img/1111_View05.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View21-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View21-1024x768.jpg 1024w, ./src/img/1111_View21-300x225.jpg 300w, ./src/img/1111_View21-768x576.jpg 768w, ./src/img/1111_View21-1536x1152.jpg 1536w, ./src/img/1111_View21.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View20-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View20-1024x768.jpg 1024w, ./src/img/1111_View20-300x225.jpg 300w, ./src/img/1111_View20-768x576.jpg 768w, ./src/img/1111_View20-1536x1152.jpg 1536w, ./src/img/1111_View20.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View07-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View07-1024x768.jpg 1024w, ./src/img/1111_View07-300x225.jpg 300w, ./src/img/1111_View07-768x576.jpg 768w, ./src/img/1111_View07-1536x1152.jpg 1536w, ./src/img/1111_View07.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View08-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View08-1024x768.jpg 1024w, ./src/img/1111_View08-300x225.jpg 300w, ./src/img/1111_View08-768x576.jpg 768w, ./src/img/1111_View08-1536x1152.jpg 1536w, ./src/img/1111_View08.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View06-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View06-1024x768.jpg 1024w, ./src/img/1111_View06-300x225.jpg 300w, ./src/img/1111_View06-768x576.jpg 768w, ./src/img/1111_View06-1536x1152.jpg 1536w, ./src/img/1111_View06.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View09-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View09-1024x768.jpg 1024w,./src/img/1111_View09-300x225.jpg 300w, ./src/img/1111_View09-768x576.jpg 768w, ./src/img/1111_View09-1536x1152.jpg 1536w, ./src/img/1111_View09.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="768" src="./src/img/1111_View18-1024x768.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/1111_View18-1024x768.jpg 1024w, ./src/img/1111_View18-300x225.jpg 300w, ./src/img/1111_View18-768x576.jpg 768w, ./src/img/1111_View18-1536x1152.jpg 1536w, ./src/img/1111_View18.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon landscape'>
-                        <img width="1024" height="880" src="./src/img/00021-e1631628636793-1024x880.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/00021-e1631628636793-1024x880.jpg 1024w, ./src/img/00021-e1631628636793-300x258.jpg 300w, ./src/img/00021-e1631628636793-768x660.jpg 768w, ./src/img/00021-e1631628636793.jpg 1495w" sizes="(max-width: 1024px) 100vw, 1024px" />
-                    </dt></dl><br style="clear: both" /><dl class='gallery-item'>
-                    <dt class='gallery-icon portrait'>
-                        <img width="768" height="1024" src="./src/img/123123333-768x1024.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="./src/img/123123333-768x1024.jpg 768w, ./src/img/123123333-225x300.jpg 225w, ./src/img/123123333-1152x1536.jpg 1152w, ./src/img/123123333.jpg 1500w" sizes="(max-width: 768px) 100vw, 768px" />
-                    </dt></dl><br style="clear: both" />
+                <div id='gallery-1' class='gallery galleryid-1101 gallery-columns-1 gallery-size-large'>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View01-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View01-1024x768.jpg 1024w, ./src/img/1111_View01-300x225.jpg 300w, ./src/img/1111_View01-768x576.jpg 768w, ./src/img/1111_View01-1536x1152.jpg 1536w, ./src/img/1111_View01.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View03-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View03-1024x768.jpg 1024w, ./src/img/1111_View03-300x225.jpg 300w, ./src/img/1111_View03-768x576.jpg 768w, ./src/img/1111_View03-1536x1152.jpg 1536w, ./src/img/1111_View03.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View04-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View04-1024x768.jpg 1024w, ./src/img/1111_View04-300x225.jpg 300w, ./src/img/1111_View04-768x576.jpg 768w, ./src/img/1111_View04-1536x1152.jpg 1536w, ./src/img/1111_View04.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View020-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View020-1024x768.jpg 1024w, ./src/img/1111_View020-300x225.jpg 300w, ./src/img/1111_View020-768x576.jpg 768w, ./src/img/1111_View020-1536x1152.jpg 1536w, ./src/img/1111_View020.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View05-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View05-1024x768.jpg 1024w, ./src/img/1111_View05-300x225.jpg 300w, ./src/img/1111_View05-768x576.jpg 768w, ./src/img/1111_View05-1536x1152.jpg 1536w, ./src/img/1111_View05.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View21-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View21-1024x768.jpg 1024w, ./src/img/1111_View21-300x225.jpg 300w, ./src/img/1111_View21-768x576.jpg 768w, ./src/img/1111_View21-1536x1152.jpg 1536w, ./src/img/1111_View21.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View20-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View20-1024x768.jpg 1024w, ./src/img/1111_View20-300x225.jpg 300w, ./src/img/1111_View20-768x576.jpg 768w, ./src/img/1111_View20-1536x1152.jpg 1536w, ./src/img/1111_View20.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View07-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View07-1024x768.jpg 1024w, ./src/img/1111_View07-300x225.jpg 300w, ./src/img/1111_View07-768x576.jpg 768w, ./src/img/1111_View07-1536x1152.jpg 1536w, ./src/img/1111_View07.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View08-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View08-1024x768.jpg 1024w, ./src/img/1111_View08-300x225.jpg 300w, ./src/img/1111_View08-768x576.jpg 768w, ./src/img/1111_View08-1536x1152.jpg 1536w, ./src/img/1111_View08.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View06-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View06-1024x768.jpg 1024w, ./src/img/1111_View06-300x225.jpg 300w, ./src/img/1111_View06-768x576.jpg 768w, ./src/img/1111_View06-1536x1152.jpg 1536w, ./src/img/1111_View06.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View09-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View09-1024x768.jpg 1024w,./src/img/1111_View09-300x225.jpg 300w, ./src/img/1111_View09-768x576.jpg 768w, ./src/img/1111_View09-1536x1152.jpg 1536w, ./src/img/1111_View09.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="768" src="./src/img/1111_View18-1024x768.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/1111_View18-1024x768.jpg 1024w, ./src/img/1111_View18-300x225.jpg 300w, ./src/img/1111_View18-768x576.jpg 768w, ./src/img/1111_View18-1536x1152.jpg 1536w, ./src/img/1111_View18.jpg 2000w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon landscape'>
+                            <img width="1024" height="880" src="./src/img/00021-e1631628636793-1024x880.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/00021-e1631628636793-1024x880.jpg 1024w, ./src/img/00021-e1631628636793-300x258.jpg 300w, ./src/img/00021-e1631628636793-768x660.jpg 768w, ./src/img/00021-e1631628636793.jpg 1495w"
+                                 sizes="(max-width: 1024px) 100vw, 1024px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
+                    <dl class='gallery-item'>
+                        <dt class='gallery-icon portrait'>
+                            <img width="768" height="1024" src="./src/img/123123333-768x1024.jpg"
+                                 class="attachment-large size-large" alt="" loading="lazy"
+                                 srcset="./src/img/123123333-768x1024.jpg 768w, ./src/img/123123333-225x300.jpg 225w, ./src/img/123123333-1152x1536.jpg 1152w, ./src/img/123123333.jpg 1500w"
+                                 sizes="(max-width: 768px) 100vw, 768px"/>
+                        </dt>
+                    </dl>
+                    <br style="clear: both"/>
                 </div>
 
 
@@ -283,63 +353,64 @@
                 <div class="projectblock allprojectspage">
 
 
-
-
                     <div class="projectitem activateblock">
                         <a href="/elf-dekor-odessa/">
                             <div class="imagepr">
 
-                                <div class="imageprabs" style="background-image: url(./src/img/00021-e1631628636793-1024x880.jpg);"></div>
+                                <div class="imageprabs"
+                                     style="background-image: url(./src/img/00021-e1631628636793-1024x880.jpg);"></div>
                             </div>
                             <div class="titletext">
-                                Elf Decor Odessa								</div>
+                                Elf Decor Odessa
+                            </div>
 
                         </a>
                     </div>
-
 
 
                     <div class="projectitem activateblock">
                         <a href="/old-fashion/">
                             <div class="imagepr">
 
-                                <div class="imageprabs" style="background-image: url(./src/img/oldFSHN55-DSC02325-min-1024x683.jpg);"></div>
+                                <div class="imageprabs"
+                                     style="background-image: url(./src/img/oldFSHN55-DSC02325-min-1024x683.jpg);"></div>
                             </div>
                             <div class="titletext">
-                                OLD Fashion								</div>
+                                OLD Fashion
+                            </div>
 
                         </a>
                     </div>
-
 
 
                     <div class="projectitem activateblock">
                         <a href="/beerteka-odessa/">
                             <div class="imagepr">
 
-                                <div class="imageprabs" style="background-image: url(./src/img/Beerteka4345-HDR.jpg-1024x683.jpeg);"></div>
+                                <div class="imageprabs"
+                                     style="background-image: url(./src/img/Beerteka4345-HDR.jpg-1024x683.jpeg);"></div>
                             </div>
                             <div class="titletext">
-                                BEERTEKA								</div>
+                                BEERTEKA
+                            </div>
 
                         </a>
                     </div>
-
 
 
                     <div class="projectitem activateblock">
                         <a href="/vinnyj-restoran/">
                             <div class="imagepr">
 
-                                <div class="imageprabs" style="background-image: url(./src/img/8E5028EE-5F09-4BE3-93CA-98BEEE46868B-1024x693.jpeg);"></div>
+                                <div class="imageprabs"
+                                     style="background-image: url(./src/img/8E5028EE-5F09-4BE3-93CA-98BEEE46868B-1024x693.jpeg);"></div>
                             </div>
                             <div class="titletext">
-                                Винный ресторан								</div>
+                                Винный ресторан
+                            </div>
 
                         </a>
                     </div>
-
-
 
 
                 </div>
@@ -347,12 +418,8 @@
             </div>
 
 
-
-
-
-
             <style>
-                .projectblock.nopadding>figure {
+                .projectblock.nopadding > figure {
                     margin: 0;
                     margin-bottom: 20px;
                     width: 100%;
@@ -365,13 +432,9 @@
             </style>
 
 
-
-
         </div>
     </div>
 </div>
-
-
 
 
 <div class="popupbocksavinov" style="display: none;">
@@ -391,25 +454,20 @@
 
 
 <script>
-    function openpopup(){
+    function openpopup() {
         $('.popupbocksavinov').fadeIn();
         $('.overlaysavinov').fadeIn();
     }
 
-    function closepopup(){
+    function closepopup() {
         $('.popupbocksavinov').fadeOut();
         $('.overlaysavinov').fadeOut();
     }
 
 
-
-
-
-    function openlang(){
+    function openlang() {
         $('#tglcls').toggle();
     }
-
-
 
 
 </script>
